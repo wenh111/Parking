@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUpActivity"
+    android:fitsSystemWindows="true">
+    <Button
+        android:id="@+id/sign_up_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/back1"
+        android:layout_margin="20dp"/>
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/user" />
+
+    <LinearLayout
+        android:id="@+id/cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/sign_up_telephone_number"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/sign_up_user"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/user"
+            android:checked="true"
+            android:buttonTint="#B39978"
+            android:text="@string/user" />
+
+        <CheckBox
+            android:id="@+id/sign_up_intendant"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/user"
+            android:buttonTint="#B39978"
+            android:text="@string/intendant" />
+        <!--android:layout_marginLeft="dp"-->
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/sign_up_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/name">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/sign_up_account"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sign_up_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/eamil"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/sign_up_password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sign_up_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/pwd"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/sign_up_ind_password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sign_up_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/private_key"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/sign_up_password"
+        android:layout_alignTop="@+id/sign_up_password"
+        android:layout_alignEnd="@+id/sign_up_password"
+        android:layout_alignBottom="@+id/sign_up_password"
+        android:layout_marginStart="260dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-50dp"
+        android:layout_marginBottom="1dp">
+        <!--android:layout_toEndOf="@+id/sign_up_password"-->
+
+        <ImageView
+            android:id="@+id/sign_up_eye_photo"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/sign_up_telephone_number"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sign_up_ind_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/phoneNum" />
+
+    <Button
+        android:id="@+id/sign_up_summit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/cb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/sign_button_up_background"
+        android:text="@string/summit"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

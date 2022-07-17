@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:fitsSystemWindows="true"
+
+    >
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#EFEFEF">
+
+
+        <TextView
+            android:id="@+id/info_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+
+            android:text="车辆查找"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_title"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_select"
+            android:gravity="center"
+            android:hint="请输入车牌"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/select_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/select"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/sign_button_up_background"
+            android:text="查找单个"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/select_all"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/sign_button_up_background"
+            android:text="查找全部"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+</RelativeLayout>

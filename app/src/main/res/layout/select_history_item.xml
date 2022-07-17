@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/intendant_setting">
+
+        <TextView
+            android:id="@+id/car_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ly_card_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_number"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/card_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/id"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/out_card_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    tools:ignore="DuplicateIds" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ly_in_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_card_id"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/in_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/car_enterTime"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/out_in_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    tools:ignore="DuplicateIds" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_out_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_in_time"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/out_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/car_exitTime"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/out_out_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    tools:ignore="DuplicateIds" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_out_time"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/cost"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/out_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    tools:ignore="DuplicateIds" />
+        </LinearLayout>
+
+
+
+</RelativeLayout>

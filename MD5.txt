@@ -1,0 +1,83 @@
+Microsoft Windows [版本 10.0.19041.1]
+(c) 2019 Microsoft Corporation。保留所有权利。
+
+C:\Users\Uncle、Cat>java -version
+java version "1.8.0_191"
+Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)
+
+C:\Users\Uncle、Cat>keytool -v -list -keystore D:\App\parking2.0\Parking1\app\MetaPark.jks
+输入密钥库口令:
+密钥库类型: jks
+密钥库提供方: SUN
+
+您的密钥库包含 2 个条目
+
+别名: android
+创建日期: 2022-4-4
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=Last, OU=Last, O=Last, L=Last, ST=Last, C=US
+发布者: CN=Last, OU=Last, O=Last, L=Last, ST=Last, C=US
+序列号: 115fa1e6
+有效期为 Mon Apr 04 17:21:06 CST 2022 至 Fri Mar 29 17:21:06 CST 2047
+证书指纹:
+         MD5:  4F:6E:39:4A:4B:1C:CF:46:9A:97:CE:6C:FF:DF:BF:CD
+         SHA1: AB:22:6B:A1:17:D6:00:71:65:67:50:F5:F2:3F:F8:B5:E2:FC:1A:5B
+         SHA256: 24:AD:55:A2:53:23:D4:34:FB:9E:4D:42:3F:7C:EA:D6:21:BB:3E:58:CB:E4:26:D2:BF:55:15:3F:A4:49:C3:99
+签名算法名称: SHA256withRSA
+主体公共密钥算法: 2048 位 RSA 密钥
+版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: F5 72 A8 E1 B6 B0 2F C9   F4 3C DA 8B D0 AD 8D CD  .r..../..<......
+0010: 4A 6A EB FB                                        Jj..
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+别名: android_park
+创建日期: 2022-4-4
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=Last, OU=Last, O=Last, L=Last, ST=Last, C=US
+发布者: CN=Last, OU=Last, O=Last, L=Last, ST=Last, C=US
+序列号: 6e6d475e
+有效期为 Mon Apr 04 17:45:31 CST 2022 至 Fri Mar 29 17:45:31 CST 2047
+证书指纹:
+         MD5:  9C:90:99:CD:3E:24:AA:86:D2:C1:14:F8:DD:9D:75:82
+         SHA1: D8:CD:DF:E9:56:18:2B:9C:CD:B6:F2:F0:12:40:F8:FE:1D:17:D9:E8
+         SHA256: BD:F6:1D:7D:86:92:66:62:F5:B0:02:7C:D2:73:41:8F:EA:BB:75:61:E5:FE:B4:A8:D2:75:00:48:AB:42:21:98
+签名算法名称: SHA256withRSA
+主体公共密钥算法: 2048 位 RSA 密钥
+版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: F7 E9 6D 01 35 BD F0 E1   85 62 20 18 69 57 AF A6  ..m.5....b .iW..
+0010: D1 15 B3 8A                                        ....
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+
+C:\Users\Uncle、Cat>

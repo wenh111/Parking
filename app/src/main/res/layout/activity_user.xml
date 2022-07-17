@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.UserActivity">
+
+
+    <TextView
+        android:id="@+id/user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day_cost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/carID_enter"
+        android:textColor="#B39978"
+        android:textSize="30dp" />
+
+
+    <LinearLayout
+        android:id="@+id/rt_lt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day_cost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/car_number1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/editext_car_number"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="1">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/car_number2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/editext_car_number"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="1">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/car_number3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/editext_car_number"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="1">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/car_number4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/editext_car_number"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="1">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/car_number5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/editext_car_number"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="1">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/car_number6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/editext_car_number"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="1">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/car_number7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/editext_car_number"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="1">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/car_number8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/editext_car_number"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center"
+            android:hint="新"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textColorHint="#000000">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/photo_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rt_lt"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sign_button_up_background"
+            android:text="@string/clear"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/photo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sign_button_up_background"
+            android:text="拍照获取车牌"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/day_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/today_fare"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/danwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/per_hour"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/number_summit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/day_cost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/function_button_background"
+        android:text="@string/car_enter"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/parking_information"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/number_summit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/function_button_background"
+        android:text="@string/car_info" />
+
+    <Button
+        android:id="@+id/car_out"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/parking_information"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/function_button_background"
+        android:text="@string/car_exit" />
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/car_out"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/function_button_background"
+        android:text="@string/add_monthly_car" />
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/book"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/function_button_background"
+        android:text="@string/log_out" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

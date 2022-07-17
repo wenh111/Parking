@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Meta Park</string>
+    <string name="summit">summit</string>
+    <string name="carID_enter">License Number Enter</string>
+    <string name="location">location</string>
+    <string name="clear">clear</string>
+    <string name="add">add</string>
+    <string name="name">Name</string>
+    <string name="eamil">Email</string>
+    <string name="phoneNum">Phone Number</string>
+    <string name="delete">delete</string>
+    <string name="forgetPWD">Forget Password</string>
+    <string name="PwdSet">Password Setting</string>
+    <string name="pwd">Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="account">Account</string>
+    <string name="user">USER</string>
+    <string name="intendant">INDENTANT</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_up">sign up</string>
+    <string name="forget_pwd">Forget Password</string>
+    <string name="private_key">Private key</string>
+    <string name="update">update</string>
+    <string name="intendant_function">Intendant Function</string>
+    <string name="add_user">Add User</string>
+    <string name="delete_user">Delete User</string>
+    <string name="user_info_update">Update User Information</string>
+    <string name="user_info_search">Search User Information</string>
+    <string name="fare">Fare</string>
+    <string name="park_log">Parking Log</string>
+    <string name="park_info">Car Parking Information</string>
+    <string name="rent_postition">Monthly Rent Position</string>
+    <string name="log_out">Log Out</string>
+    <string name="today_fare">Fare:</string>
+    <string name="per_hour">CHN/H</string>
+    <string name="car_enter">Car Enter</string>
+    <string name="car_info">Car Information</string>
+    <string name="car_exit">Car Exit</string>
+    <string name="add_monthly_car">Add Rent Position Car</string>
+    <string name="car_position">Position:</string>
+    <string name="add_time">Add Time:</string>
+    <string name="expire_time">Expire Time:</string>
+    <string name="id">ID:</string>
+    <string name="cost">Cost:</string>
+    <string name="car_enterTime">Car Enter Time</string>
+    <string name="car_exitTime">Car Exit Time</string>
+    <string name="car_monthly">Rent Position Car:</string>
+
+    <string-array name="region">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+</resources>

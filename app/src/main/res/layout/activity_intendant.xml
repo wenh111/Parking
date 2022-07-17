@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.IntendantActivity"
+    android:background="#F7F7F7"
+    android:fitsSystemWindows="true">
+
+  <TextView
+
+      android:id="@+id/setting"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:padding="10dp"
+      android:text="@string/intendant_function"
+      android:textColor="@color/black"
+      android:textSize="35sp" />
+
+  <ScrollView
+      android:id="@+id/setting_SC"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/setting"
+      android:layout_marginTop="0dp"
+      android:background="#F7F7F7"
+      android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <RelativeLayout
+          android:id="@+id/user_data"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/intendant_setting"
+          android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/intendant_setting"
+            android:drawableRight="@drawable/in"
+            android:gravity="center_vertical"
+            android:outlineProvider="none"
+            android:paddingLeft="20dp"
+            android:text="@string/add_user" />
+
+        <Button
+            android:id="@+id/del_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/add_user"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/intendant_setting"
+            android:drawableRight="@drawable/in"
+            android:gravity="center_vertical"
+            android:outlineProvider="none"
+            android:paddingLeft="20dp"
+            android:text="@string/delete_user" />
+
+        <Button
+            android:id="@+id/upd_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/del_user"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/intendant_setting"
+            android:drawableRight="@drawable/in"
+            android:gravity="center_vertical"
+            android:outlineProvider="none"
+            android:paddingLeft="20dp"
+            android:text="@string/user_info_update" />
+
+        <Button
+            android:id="@+id/select_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/upd_user"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/intendant_setting"
+            android:drawableRight="@drawable/in"
+            android:gravity="center_vertical"
+            android:outlineProvider="none"
+            android:paddingLeft="20dp"
+            android:text="@string/user_info_search" />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/cost_setting"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/user_data"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/intendant_setting"
+          android:orientation="vertical">
+
+        <Button
+            android:id="@+id/day_price"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/intendant_setting"
+            android:drawableRight="@drawable/in"
+            android:gravity="center_vertical"
+            android:outlineProvider="none"
+            android:paddingLeft="20dp"
+            android:text="@string/fare" />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/history_rl"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/cost_setting"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/intendant_setting"
+          android:orientation="vertical">
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/intendant_setting"
+            android:drawableRight="@drawable/in"
+            android:gravity="center_vertical"
+            android:outlineProvider="none"
+            android:paddingLeft="20dp"
+            android:text="@string/park_log" />
+
+        <Button
+            android:id="@+id/car_information"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/history"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/intendant_setting"
+            android:drawableRight="@drawable/in"
+            android:gravity="center_vertical"
+            android:outlineProvider="none"
+            android:paddingLeft="20dp"
+            android:text="@string/park_info" />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/car_book_rl"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/history_rl"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/intendant_setting"
+          android:orientation="vertical">
+
+        <Button
+            android:id="@+id/car_book"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/intendant_setting"
+            android:drawableRight="@drawable/in"
+            android:gravity="center_vertical"
+            android:outlineProvider="none"
+            android:paddingLeft="20dp"
+            android:text="@string/rent_postition" />
+      </RelativeLayout>
+
+
+      <RelativeLayout
+          android:id="@+id/ind_log_out"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/car_book_rl"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/intendant_setting"
+          android:orientation="vertical">
+
+        <Button
+            android:id="@+id/intendant_log_out"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/intendant_setting"
+            android:outlineProvider="none"
+            android:text="@string/log_out" />
+      </RelativeLayout>
+
+    </RelativeLayout>
+
+  </ScrollView>
+
+</RelativeLayout>

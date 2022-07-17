@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="34dp"
+        android:text="WELCOME"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:text="TO USE EASY PARKING"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="160dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp"
+        tools:ignore="MissingClass" />
+
+    <TextView
+        android:id="@+id/tv_psr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="430dp"
+        android:text="Parking space remains:"
+        android:textColor="#0C4FF8"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/main_sign_up"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_psr"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/sign_button_in_background"
+        android:text="Sign up"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/main_sign_in"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/main_sign_up"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/sign_button_up_background"
+        android:text="Sign in" />
+
+</RelativeLayout>

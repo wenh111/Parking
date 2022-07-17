@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/forgetPWD"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/forget_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/back1" />
+
+    <ImageView
+        android:id="@+id/forget_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/forget_photo" />
+
+    <EditText
+        android:id="@+id/forget_Email"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/forget_photo"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/eamil" />
+
+    <EditText
+        android:id="@+id/forget_telephone_number"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/forget_Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/phoneNum"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/forget_summit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/forget_telephone_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/sign_button_up_background"
+        android:text="@string/summit"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
